@@ -1,4 +1,4 @@
-FROM node:24-alpine3.23-dev AS deps
+FROM node:24-alpine3.23 AS deps
 
 WORKDIR /app
 
@@ -11,7 +11,7 @@ RUN if [ -f package-lock.json ]; then \
     echo "No lockfile found." && exit 1; \
   fi
 
-FROM node:24-alpine3.23-dev AS dev
+FROM node:24-alpine3.23 AS dev
 
 WORKDIR /app
 
