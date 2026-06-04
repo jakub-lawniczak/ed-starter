@@ -1,4 +1,4 @@
-name: lint & type-check
+name: lint & typecheck
 
 on:
   pull_request:
@@ -21,4 +21,4 @@ jobs:
 
       - run: npm run lint
 
-      - run: npm run type-check
+      - run: npm run typecheck
