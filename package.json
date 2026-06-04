@@ -3,22 +3,31 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+<<<<<<< HEAD
+=======
+    "dev": "next dev -H 0.0.0.0 -p 3000",
+>>>>>>> main
     "build": "next build",
     "dev": "next dev",
     "start": "next start",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
     "format": "prettier --write .",
+<<<<<<< HEAD
     "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
     "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
     "upload": "opennextjs-cloudflare build && opennextjs-cloudflare upload",
     "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts"
+=======
+    "seed": "npx tsx scripts/seed.ts"
+>>>>>>> main
   },
   "dependencies": {
     "@opennextjs/cloudflare": "^1.19.11",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
     "next": "^16.2.0",
+    "pg": "^8.20.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "tailwind-merge": "^2.5.0",
@@ -27,13 +36,21 @@
   "devDependencies": {
     "@tailwindcss/postcss": "^4.2.2",
     "@types/node": "^22.0.0",
+    "@types/pg": "^8.20.0",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
+    "@vitest/coverage-v8": "^4.1.2",
     "eslint": "^9.0.0",
     "eslint-config-next": "^16.2.0",
     "prettier": "^3.3.0",
     "tailwindcss": "^4.2.0",
+<<<<<<< HEAD
     "typescript": "^5.9.0",
     "wrangler": "^4.94.0"
+=======
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.0",
+    "vitest": "^4.1.2"
+>>>>>>> main
   }
 }
