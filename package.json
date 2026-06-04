@@ -3,24 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-<<<<<<< HEAD
-=======
     "dev": "next dev -H 0.0.0.0 -p 3000",
->>>>>>> main
     "build": "next build",
-    "dev": "next dev",
     "start": "next start",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
     "format": "prettier --write .",
-<<<<<<< HEAD
-    "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
-    "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
-    "upload": "opennextjs-cloudflare build && opennextjs-cloudflare upload",
-    "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts"
-=======
-    "seed": "npx tsx scripts/seed.ts"
->>>>>>> main
+    "seed": "tsx scripts/seed.ts",
+    "cf:build": "opennextjs-cloudflare build",
+    "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts",
+    "preview": "npm run cf:build && opennextjs-cloudflare preview",
+    "deploy": "npm run cf:build && opennextjs-cloudflare deploy",
+    "upload": "npm run cf:build && opennextjs-cloudflare upload"
   },
   "dependencies": {
     "@opennextjs/cloudflare": "^1.19.11",
@@ -44,13 +38,9 @@
     "eslint-config-next": "^16.2.0",
     "prettier": "^3.3.0",
     "tailwindcss": "^4.2.0",
-<<<<<<< HEAD
-    "typescript": "^5.9.0",
-    "wrangler": "^4.94.0"
-=======
     "tsx": "^4.21.0",
     "typescript": "^5.9.0",
-    "vitest": "^4.1.2"
->>>>>>> main
+    "vitest": "^4.1.2",
+    "wrangler": "^4.97.0"
   }
 }
