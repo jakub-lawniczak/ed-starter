@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @theme {
   --font-mono: 'Courier New', Courier, monospace;
@@ -9,7 +9,7 @@
   --color-board-border: #222222;
   --color-board-text: #f5f0e0;
   --color-board-muted: #6b6b6b;
-  --color-board-header: #1a1a1a;
+  --color-board-header: #2a2a2a;
 
   --animate-flip-top: flipTop 0.25s ease-in forwards;
   --animate-flip-bottom: flipBottom 0.25s ease-out 0.25s forwards;

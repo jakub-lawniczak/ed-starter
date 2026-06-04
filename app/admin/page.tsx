@@ -5,6 +5,7 @@ import { useFlightsStore } from '@/store/flightsStore';
 import { StatusControl } from '@/components/admin/StatusControl';
 import { FlightEditor } from '@/components/admin/FlightEditor';
 import type { Flight } from '@/types';
+import Link from 'next/link';
 
 export default function AdminPage() {
   const { flights, setFlights, removeFlight, resetFlights } = useFlightsStore();
@@ -53,9 +54,9 @@ export default function AdminPage() {
             Admin Panel
           </h1>
           <p className="text-xs text-board-muted mt-0.5">
-            <a href="/" className="hover:text-amber-400 transition-colors">
+            <Link href="/" className="hover:text-amber-400 transition-colors">
               ← Back to FIDS
-            </a>
+            </Link>
           </p>
         </div>
         <div className="flex gap-3">
