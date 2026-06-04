@@ -53,6 +53,7 @@ export default function AdminPage() {
             Admin Panel
           </h1>
           <p className="text-xs text-board-muted mt-0.5">
+            <BackNav />
             <a href="/" className="hover:text-amber-400 transition-colors">
               ← Back to FIDS
             </a>
